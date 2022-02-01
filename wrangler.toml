@@ -1,0 +1,16 @@
+name = "golang-worker"
+type = "javascript"
+account_id = "ae061904cc61b6f29bd6d1d34c04c4f9"
+workers_dev = true
+compatibility_date = "2022-01-31"
+
+[build]
+command = "make"
+
+[build.upload]
+format = "modules"
+main = "./shim.mjs"
+
+[[build.upload.rules]]
+type = "CompiledWasm"
+globs = ["**/*.wasm"]

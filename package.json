@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "golang-worker",
+  "version": "1.0.0",
+  "description": "A test golang worker",
+  "module": "./dist/shim.mjs",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "license": "MIT OR Apache-2.0",
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "prettier": "^1.19.1",
+    "webpack": "^5.15.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
